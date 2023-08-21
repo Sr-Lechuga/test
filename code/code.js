@@ -15,7 +15,8 @@ const observer = new IntersectionObserver(verifyVisibility);
 
 // observer.observe(caja03);
 
-for (caja of cajas){
+//Each caja es a reference to an html element of class caja
+for (const caja of cajas){
     //Set the observer, to observe each one of the boxes
     observer.observe(caja);
 }
